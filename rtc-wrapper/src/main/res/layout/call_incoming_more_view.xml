@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/more_call_income_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_call_income_name_text"
+        android:layout_centerHorizontal="true">
+
+        <com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout
+            android:id="@+id/more_hang_up_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="68dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hang_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/hang_up"
+                android:textColor="#ff6666"
+                android:textSize="20sp" />
+        </com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout>
+
+        <com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout
+            android:id="@+id/more_accept_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/more_hang_up_ly"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/accept"
+                android:textColor="#ccff66"
+                android:textSize="20sp" />
+        </com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

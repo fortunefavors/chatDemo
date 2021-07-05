@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorNoVideoBackground">#CCCCCC</color>
+    <color name="btn_bg_def">#00ffffff</color>
+    <color name="btn_bg_sel">#eeeeeeee</color>
+</resources>

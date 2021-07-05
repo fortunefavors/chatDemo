@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cellPadding">5dp</dimen>
+    <dimen name="loading_view_ball_up_translation_y">2dp</dimen>
+    <dimen name="loading_view_ball_down_translation_y">3dp</dimen>
+</resources>

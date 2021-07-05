@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:minWidth="90dp"
+          android:maxWidth="281dp"
+          android:padding="15dp"
+          android:minHeight="45dp"
+          android:background="@drawable/toast_view_background"
+          android:gravity="center"
+          android:lineSpacingExtra="1dp"
+          android:textColor="@android:color/white"
+          android:textSize="15sp"/>

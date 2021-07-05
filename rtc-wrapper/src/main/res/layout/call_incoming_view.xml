@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/call_income_name_text"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="72sp" />
+
+    <TextView
+        android:id="@+id/income_invite_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_income_name_text"
+        android:layout_alignEnd="@+id/call_income_name_text"
+        android:layout_marginTop="14dp"
+        android:text="@string/call_income_invite"
+        android:textColor="#a8a8a8"
+        android:textSize="48sp" />
+
+    <com.xiaoyu.rtc.wrapper.view.Loading3BallView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/income_invite_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout
+            android:id="@+id/hang_up_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/select_focus"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hang_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/hang_up"
+                android:textColor="#ff6666"
+                android:textSize="20sp" />
+        </com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout>
+
+        <com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout
+            android:id="@+id/accept_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/select_focus"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/accept"
+                android:textColor="#ccff66"
+                android:textSize="20sp" />
+        </com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout>
+
+        <com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout
+            android:id="@+id/voice_accept_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/select_focus"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/voice_answer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/voice_accept"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </com.xiaoyu.rtc.wrapper.view.AlphaLinearLayout>
+
+    </LinearLayout>
+</merge>
